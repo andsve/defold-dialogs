@@ -2,8 +2,11 @@ local dialogs = require "dialogs/dialogs"
 
 function init(self)
 	msg.post(".", "acquire_input_focus")
+	
     self.save_button = gui.get_node("save_button")
     self.save_path = gui.get_node("save_path")
+    self.load_button = gui.get_node("load_button")
+    self.load_path = gui.get_node("load_path")
 end
 
 local function pressed_button(action, node)
@@ -21,5 +24,12 @@ function on_input(self, action_id, action)
     			gui.set_text(self.save_path, res)
     		end
     	end
+    	
+    	if pressed_button(action, self.load_button) then
+            local res = dialogs.load("", "")
+            if res then
+                gui.set_text(self.load_path, res)
+            end
+        end
     end
 end

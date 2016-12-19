@@ -1,6 +1,5 @@
-
 local ffi = package.preload.ffi()
-local qd = ffi.load("dialogs/native_libs/libquickdialog.dylib")
+local qd = ffi.load("dialogs/native_libs/nfd")
 ffi.cdef[[
 enum {
 	NFD_ERROR,

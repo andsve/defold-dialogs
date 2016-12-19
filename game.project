@@ -1,6 +1,6 @@
 [project]
 title = DefoldNativeDialogs
-version = 1.0
+version = 0.9
 
 [bootstrap]
 main_collection = /main/main.collectionc
@@ -9,8 +9,8 @@ main_collection = /main/main.collectionc
 game_binding = /input/game.input_bindingc
 
 [display]
-width = 1280
-height = 720
+width = 600
+height = 300
 
 [physics]
 scale = 0.02
