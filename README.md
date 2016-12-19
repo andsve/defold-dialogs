@@ -4,9 +4,11 @@ Super simple Defold library for accessing native save and open dialogs (using Lu
 ## Usage
 1. Add this library as a [dependency](http://www.defold.com/manuals/libraries/#_setting_up_library_dependencies) in your Defold project. Pick one of the release Zip file URLs from: https://github.com/andsve/defold-dialogs/releases
 
-2. In your script, add; `local dialogs = require "dialogs/dialogs"`.
+2. Currently you need to copy the `native_libs` folder supplied in the library to the root of your project.
 
-3. When you want to show a dialog, call:
+3. In your script, add; `local dialogs = require "dialogs/dialogs"`.
+
+4. When you want to show a dialog, call:
     * Show an open dialog:
     ```Lua
     print(dialogs.open(".txt,.lua", "c:/PathToDefaultDirectory"))
